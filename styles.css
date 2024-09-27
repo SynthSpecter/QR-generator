@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Audiowide';
+  src: url('./Audiowide-Regular.ttf') format('truetype');
+}
+
+body {
+  background: linear-gradient(45deg, #000, #1a0033);
+  color: #ff00ff;
+  font-family: 'Audiowide', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  box-shadow: 0 0 20px #00ffff;
+  border: 2px solid #ff00ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #ff00ff;
+  color: #000;
+  text-shadow: 0 0 5px #00ffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ffff;
+  color: #ff00ff;
+}
+
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#qrcode {
+  animation: fadeIn 1s ease-in-out;
+  margin-bottom: 15px;
+}
+
+#qrcode img {
+  display: block;
+  margin: 0 auto;
+}
+
+#download-btn {
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#qrcode {
+  animation: fadeIn 1s ease-in-out;
+  margin: 20px 0;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+#text-input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.share-buttons {
+  margin-top: 20px;
+}
