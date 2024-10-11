@@ -6,28 +6,38 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Générateur de QR Code</title>
    <link rel="stylesheet" href="styles.css">
+   <!-- Inclusion de la bibliothèque QRCode.js -->
+   <!-- Including the QRCode.js library -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
 <body>
    <main class="container">
       <h1>Générateur de QR Code</h1>
+      <!-- Section de saisie du texte -->
+      <!-- Text input section -->
       <div class="input-section">
          <input type="text" id="text-input" placeholder="Entrez votre texte ici">
-         <button onclick="generateQRCode()">Générer QR Code</button>
+         <button id="generate-btn">Générer QR Code</button>
       </div>
+      <!-- Conteneur du QR code et du bouton de téléchargement -->
+      <!-- QR code container and download button -->
       <div class="qr-container">
          <div id="qrcode"></div>
          <a id="download-link" download="qrcode.png">
             <button id="download-btn" style="display: none;">Télécharger QR Code</button>
          </a>
       </div>
+      <!-- Boutons de partage -->
+      <!-- Share buttons -->
       <div class="share-buttons">
-         <button onclick="shareOnFacebook()">Facebook</button>
-         <button onclick="shareOnTwitter()">Twitter</button>
+         <button id="facebook-btn">Facebook</button>
+         <button id="twitter-btn">Twitter</button>
       </div>
    </main>
-   <script src="scripts.js"></script>
+   <script src="./scripts/qrGenerator.js"></script>
+   <script src="./scripts/sharing.js"></script>
+   <script src="./scripts/main.js"></script>
 </body>
 
 </html>
